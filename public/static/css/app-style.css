@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+
+  
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #e5e5e5;
+}
+.sidebar {
+    background-color: #fff;
+    
+    /* background-color: rgba(225, 225, 225, 0.5) !important; */
+    min-height: 100vh;
+    width: 250px;
+    box-shadow: 0px 0px 5px 0px rgba(202, 202, 202, 0.6);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /* overflow-x: hidden; */
+    transition:  0.3s;
+    padding-top: 1rem;
+  }
+  
+  .sidebar a {
+    padding: 13px 15px;
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    display: block;
+    transition: 0.3s;
+    font-weight: bold;
+  }
+  .small-text {
+      font-size: 13px;
+  }
+  
+  .sidebar a:hover {
+    color: #01445f;
+  }
+  .openbtn {
+    /* font-size: 20px; */
+    cursor: pointer;
+    /* background-color: #111; */
+    color: #000;
+    padding: 10px 15px;
+    /* border: none; */
+  }
+  
+  .openbtn:hover {
+    color: #444;
+  }
+  .openbtn:visited {
+      border: none;
+      box-shadow: none;
+  }
+  
+  #main {
+    transition: margin-left .3s;
+    padding: 16px;
+    margin-left: 250px;
+  }
+  
+  .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #000 !important;
+    display: block;
+    border: none;
+    background: none;
+    /* width: 100%; */
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: #fff;
+    padding-left: 8px;
+  }
+
+  .dropdown-container2 {
+    position: absolute; 
+    z-index: 99;
+    right: 1%;
+    display: none;
+    background-color: #fff;
+    padding-left: 8px;
+    transition:  2s ;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(202, 202, 202, 0.6);
+  }
+  
+  /* Optional: Style the caret down icon */
+  #iconnn {
+    float: right;
+    padding-right: 10px;
+    font-weight: bold;
+  }
+  .navbar-header {
+      margin-left: 245px;
+      margin-top: 0 !important;
+      transition: 0.5s;
+      box-shadow: 0px 0px 5px 0px rgba(202, 202, 202, 0.6);
+  }
+  .search, .inpIcon {
+      border: 0 !important;
+      border-radius: 0 !important;
+      background-color: none;
+  }
+  .groupIcon, .inpIcon {
+      background-color: #fff !important;
+  }
+  .avatar-img {
+      border: 1px solid #999;
+      padding: 0.07rem;
+  }
+  .collapsed li span {
+      display: none !important;
+      transition: opacity 1s ease-out;
+    /* opacity: 0; */
+  }
+  .collapsed ul {
+    margin-left: 0 !important;
+  }
+  .top-logo-section .logo-lg {
+    display: none;
+    transition: opacity 1s ease-out;
+    opacity: 0.7;
+    }
+  .collapsed .top-logo-section .logo-sm {
+      display: none;
+      transition: opacity 1s ease-out;
+    opacity: 0.7;
+  }
+  .collapsed .top-logo-section .logo-lg {
+      display: block;
+      opacity: 1;
+  }
+  .collapsed li {
+      position: relative;
+  }
+  .sub-menu {
+      display: none;
+      list-style: none;
+      transition: opacity 1s ease-out;
+    /* opacity: 0; */
+  }
+  .collapsed li a:hover .item {
+    display: block !important;
+    position: absolute;
+    left: 60%;
+    top: 13%;
+    border-radius: 5px;
+    z-index: 1;
+    background-color: #fff;
+    padding: 0.4rem 3rem;
+  }
+  /* .collapsed li a:hover + .sub-menu {
+    display: block !important;
+    position: absolute;
+    left: 60%;
+    top: 13%;
+    border-radius: 5px;
+    z-index: 1;
+    background-color: #fff;
+    padding: 0.4rem 3rem;
+  } */
+.collapsed li .dropdown-container {
+    position: absolute;
+    left: 70%;
+    top: 10%;
+}
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-width: 450px) {
+    #main, .navbar-header{
+      margin-left: 0 !important;
+    }
+    .sidebar{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 746px) {
+    #main, .navbar-header{
+      margin-left: 0 !important;
+    }
+    .sidebar{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 990px) {
+    #main, .navbar-header{
+      margin-left: 0 !important;
+    }
+    .sidebar{
+      display: none;
+    }
+  }
